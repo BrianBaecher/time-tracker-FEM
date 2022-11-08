@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 300;
+    margin: 19px 0;
+}
+
+p {
+    font-size: .75em;
+    letter-spacing: .1em;
+}
+
+img {
+    width: 40px;
+}
+
+.none {
+    display: none;
+    color: pink;
+}
+
+.border {
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.panels{
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+ /* test */
+.panelHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.panelHeader > img{
+    width: 20px;
+}
+
+.panelContent {
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+    height: 100%;
+    color: white;
+    padding: 0 2em;
+}
+
+/* work test
+trying to move content to bottom, to overlay image at top */
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: hsl(15, 100%, 70%);
+    height: 100%;
+}
+
+.workImageWrapper {
+    z-index: 0;
+    height: 2.5em;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.workImage {
+    margin-right: 4em;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: -10px;
+}
+
+
+
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    height: 7em;
+    justify-content: space-between;
+    margin-top: 2em;
+}
