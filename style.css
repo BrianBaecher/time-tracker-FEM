@@ -43,16 +43,25 @@ p {
 }
 
 .border {
-  /* border: 2px solid black; */
-  /* issue with panels at lower edges bleeding colors */
+  /* issue with panels at edges bleeding colors */
   border-radius: 10px;
   overflow: hidden;
+}
+
+.everything {
+  border: 4px solid pink;
+  max-width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ----------PANEL---------- */
 /* for some reason the grid-template-rows only affects
 the first row? */
 .panels {
+  max-width: 90%;
   display: grid;
   grid-template-rows: 200px;
   grid-row: auto;
@@ -88,31 +97,40 @@ the first row? */
 }
 
 .timeframes {
-  margin: 1.5em 2em 0 2em;
+  margin: 1em 2em 0 2em;
 }
 
 .timeframes > p {
   font-size: 0.8em;
-  margin-bottom: 1.75em;
+  margin-bottom: 1.25em;
 }
 
 .timeframes > p:nth-child(3) {
   margin-bottom: 0;
+  /* padding-bottom: 1em; */
 }
 
-.dailyButton:hover{
-  animation: btnSlide .25s ease-in;
+/* page starts looking at weekly stats, so I'm just inserting the active
+color here */
+
+.weeklyButton {
+  color: whitesmoke;
+}
+
+/* timeframe hovers below */
+.dailyButton:hover {
+  animation: btnSlide 0.25s ease-in;
   cursor: pointer;
   color: whitesmoke;
 }
 
-.weeklyButton:hover{
-  animation: btnSlide .25s ease-in;
+.weeklyButton:hover {
+  animation: btnSlide 0.25s ease-in;
   cursor: pointer;
 }
 
-.monthlyButton:hover{
-  animation: btnSlide .25s ease-in;
+.monthlyButton:hover {
+  animation: btnSlide 0.25s ease-in;
   cursor: pointer;
 }
 
@@ -129,7 +147,7 @@ the first row? */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: hsl(235, 46%, 20%);
-  height: 100%;
+  /* width: 100%; */
   padding: 0 2em;
 }
 
@@ -175,27 +193,27 @@ the first row? */
 /* added specificity for panel color changes above header */
 .work {
   /* background-color: hsl(15, 100%, 70%); */
-  background: linear-gradient(hsl(15, 59%, 56%), hsl(235, 46%, 20%));
+  background: linear-gradient(hsl(15, 59%, 56%), hsl(235, 46%, 20%) 33%);
 }
 
 .play {
-  background: linear-gradient(hsl(195, 74%, 62%), hsl(235, 46%, 20%));
+  background: linear-gradient(hsl(195, 74%, 62%), hsl(235, 46%, 20%) 33%);
 }
 
 .study {
-  background: linear-gradient(hsl(348, 47%, 51%), hsl(235, 46%, 20%));
+  background: linear-gradient(hsl(348, 47%, 51%), hsl(235, 46%, 20%) 33%);
 }
 
 .exercise {
-  background: linear-gradient(hsl(145, 47%, 45%), hsl(235, 46%, 20%));
+  background: linear-gradient(hsl(145, 47%, 45%), hsl(235, 46%, 20%) 33%);
 }
 
 .social {
-  background: linear-gradient(hsl(264, 64%, 52%), hsl(235, 46%, 20%));
+  background: linear-gradient(hsl(264, 64%, 52%), hsl(235, 46%, 20%) 33%);
 }
 
 .selfCare {
-  background: linear-gradient(hsl(43, 55%, 53%), hsl(235, 46%, 20%));
+  background: linear-gradient(hsl(43, 55%, 53%), hsl(235, 46%, 20%) 33%);
 }
 /* ----------END PANEL---------- */
 
@@ -204,7 +222,7 @@ the first row? */
   from {
     transform: translateX(0px);
   }
-  25%{
+  25% {
     transform: translateX(-5px);
   }
   50% {
@@ -215,5 +233,109 @@ the first row? */
   }
   to {
     transform: translateX(0px);
+  }
+}
+
+/* MEDIA */
+@media screen and (max-width: 768px) {
+  h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  h4 {
+    font-weight: ;
+  }
+  .everything {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .panels {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  /* report/profile */
+  .reportHead > h2 {
+    margin-bottom: 0;
+  }
+
+  .report {
+    padding: 1em 2em;
+    background-color: hsl(235, 45%, 61%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .report > img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 0;
+    margin-right: 0.5em;
+  }
+
+  .timeframes {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* end report/profile */
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    height: auto;
+  }
+
+  .panelContent {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+    width: auto;
+    padding: 0 1em;
+  }
+
+  .panelBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .prevBlock {
+    margin: 0 0;
+    transform: translateY(-0.5em);
+  }
+  .work {
+    background: linear-gradient(hsl(15, 59%, 56%), hsl(235, 46%, 20%) 45%);
+  }
+
+  .play {
+    background: linear-gradient(hsl(195, 74%, 62%), hsl(235, 46%, 20%) 45%);
+  }
+
+  .study {
+    background: linear-gradient(hsl(348, 47%, 51%), hsl(235, 46%, 20%) 45%);
+  }
+
+  .exercise {
+    background: linear-gradient(hsl(145, 47%, 45%), hsl(235, 46%, 20%) 45%);
+  }
+
+  .social {
+    background: linear-gradient(hsl(264, 64%, 52%), hsl(235, 46%, 20%) 45%);
+  }
+
+  .selfCare {
+    background: linear-gradient(hsl(43, 55%, 53%), hsl(235, 46%, 20%) 45%);
   }
 }
