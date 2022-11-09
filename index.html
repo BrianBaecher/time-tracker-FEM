@@ -31,14 +31,14 @@
     <div class="panels">
       <div class="personCard">
         <div class="report">
-        <img src="./images/image-jeremy.png" alt="" />
+          <img src="./images/image-jeremy.png" alt="" />
           <p>Report for</p>
           <h2>Jeremy Robson</h2>
         </div>
         <div class="timeframes">
-          <p>Daily</p>
-          <p>Weekly</p>
-          <p>Monthly</p>
+          <p class="dailyButton">Daily</p>
+          <p class="weeklyButton">Weekly</p>
+          <p class="monthlyButton">Monthly</p>
         </div>
       </div>
       <!-- -------WORK PANEL ------- -->
@@ -51,35 +51,38 @@
             <h4>Work</h4>
             <img class="navDots" src="./images/icon-ellipsis.svg" alt="" />
           </div>
-          <div class="workDaily none">
+          <div class="workText timeframeDaily none">
             <h2>
               5hrs
               <!-- daily -->
             </h2>
-            <p>
-              Previous - 7hrs
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+              - 7hrs
               <!-- daily -->
-            </p>
+            </span>
           </div>
-          <div class="workWeekly ">
+          <div class="workText timeframeWeekly">
             <h2>
               32hrs
               <!-- weekly -->
             </h2>
-            <p>
-              Previous - 36hrs
+            <span class="prevBlock">
+              <span class="prevText">Last Week</span>
+              - 36hrs
               <!-- weekly -->
-            </p>
+            </span>
           </div>
-          <div class="workMonthly none">
-            <h3>
+          <div class="workText timeframeMonthly none">
+            <h2>
               103hrs
               <!-- monthly -->
-            </h3>
-            <p>
-              Previous - 128hrs
+            </h2>
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+              - 128hrs
               <!-- monthly -->
-            </p>
+            </span>
           </div>
         </div>
       </div>
@@ -93,37 +96,41 @@
             <h4>Play</h4>
             <img class="navDots" src="./images/icon-ellipsis.svg" alt="" />
           </div>
-          <div class="playDaily none">
+          <div class="playText timeframeDaily none">
             <h2>
               1hr
               <!-- daily -->
             </h2>
 
-            <p>
-              Previous - 2hrs
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+              - 2hrs
               <!-- daily -->
-            </p>
+            </span>
           </div>
-          <div class="playWeekly">
+          <div class="playText timeframeWeekly">
             <h2>
               10hrs
               <!-- weekly -->
             </h2>
-            <p>
-              Previous - 8hrs
+            <span class="prevBlock">
+              <span class="prevText">Last Week</span>
+              - 8hrs
               <!-- weekly -->
-            </p>
+            </span>
           </div>
-        </div>
-        <div class="playMonthly none">
-          <h2>
-            23hrs
-            <!-- monthly -->
-          </h2>
-          <p>
-            Previous - 29hrs
-            <!-- monthly -->
-          </p>
+          <div class="playText timeframeMonthly none">
+            <h2>
+              23hrs
+              <!-- monthly -->
+            </h2>
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+
+              - 29hrs
+              <!-- monthly -->
+            </span>
+          </div>
         </div>
       </div>
       <!-- ------- STUDY PANEL------- -->
@@ -136,36 +143,42 @@
             <h4>Study</h4>
             <img class="navDots" src="./images/icon-ellipsis.svg" alt="" />
           </div>
-          <div class="studyDaily none">
+          <div class="studyText timeframeDaily none">
             <h2>
               0hrs
               <!-- daily -->
             </h2>
 
-            <p>
-              Previous - 1hr
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+
+              - 1hr
               <!-- daily -->
-            </p>
+            </span>
           </div>
-          <div class="studyWeekly">
+          <div class="studyText timeframeWeekly">
             <h2>
               4hrs
               <!-- weekly -->
             </h2>
-            <p>
-              Previous - 7hrs
+            <span class="prevBlock">
+              <span class="prevText">Last Week</span>
+
+              - 7hrs
               <!-- weekly -->
-            </p>
+            </span>
           </div>
-          <div class="studyMonthly none">
+          <div class="studyText timeframeMonthly none">
             <h2>
               13hrs
               <!-- monthly -->
             </h2>
-            <p>
-              Previous - 19hrs
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+
+              - 19hrs
               <!-- monthly -->
-            </p>
+            </span>
           </div>
         </div>
       </div>
@@ -179,36 +192,39 @@
             <h4>Exercise</h4>
             <img class="navDots" src="./images/icon-ellipsis.svg" alt="" />
           </div>
-          <div class="exerciseDaily none">
+          <div class="exerciseText timeframeDaily none">
             <h2>
               1hr
               <!-- daily -->
             </h2>
 
-            <p>
-              Previous - 1hr
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+              - 1hr
               <!-- daily -->
-            </p>
+            </span>
           </div>
-          <div class="exerciseWeekly">
+          <div class="exerciseText timeframeWeekly">
             <h2>
               4hrs
               <!-- weekly -->
             </h2>
-            <span>
-              Previous - 5hrs
+            <span class="prevBlock">
+              <span class="prevText">Last Week</span>
+              - 5hrs
               <!-- weekly -->
             </span>
           </div>
-          <div class="exerciseMonthly none">
+          <div class="exerciseText timeframeMonthly none">
             <h2>
               11hrs
               <!-- monthly -->
             </h2>
-            <p>
-              Previous - 18hrs
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+              - 18hrs
               <!-- monthly -->
-            </p>
+            </span>
           </div>
         </div>
       </div>
@@ -222,36 +238,39 @@
             <h4>Social</h4>
             <img class="navDots" src="./images/icon-ellipsis.svg" alt="" />
           </div>
-          <div class="socialDaily none">
+          <div class="socialText timeframeDaily none">
             <h2>
-              Social 1hr
+              1hr
               <!-- daily -->
             </h2>
 
-            <p>
-              Previous - 3hrs
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+              - 3hrs
               <!-- daily -->
-            </p>
+            </span>
           </div>
-          <div class="socialWeekly">
+          <div class="socialText timeframeWeekly">
             <h2>
               5hrs
               <!-- weekly -->
             </h2>
-            <p>
-              Previous - 10hrs
+            <span class="prevBlock">
+              <span class="prevText">Last Week</span>
+              - 10hrs
               <!-- weekly -->
-            </p>
+            </span>
           </div>
-          <div class="socialMonthly none">
+          <div class="socialText timeframeMonthly none">
             <h2>
               21hrs
               <!-- monthly -->
             </h2>
-            <p>
-              Previous - 23hrs
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+              - 23hrs
               <!-- monthly -->
-            </p>
+            </span>
           </div>
         </div>
       </div>
@@ -265,36 +284,38 @@
             <h4>Self Care</h4>
             <img class="navDots" src="./images/icon-ellipsis.svg" alt="" />
           </div>
-          <div class="selfCareDaily none">
+          <div class="selfCareText timeframeDaily none">
             <h2>
-              Self Care 0hrs
+              0hrs
               <!-- daily -->
             </h2>
-
-            <p>
-              Previous - 1hr
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+              - 1hr
               <!-- daily -->
-            </p>
+            </span>
           </div>
-          <div class="selfCareWeekly">
+          <div class="selfCareText timeframeWeekly">
             <h2>
               2hrs
               <!-- weekly -->
             </h2>
-            <p>
-              Previous - 2hrs
+            <span class="prevBlock">
+              <span class="prevText">Last Week</span>
+              - 2hrs
               <!-- weekly -->
-            </p>
+            </span>
           </div>
-          <div class="selfCareMonthly none">
+          <div class="selfCareText timeframeMonthly none">
             <h2>
               7hrs
               <!-- monthly -->
             </h2>
-            <p>
-              Previous - 11hrs
+            <span class="prevBlock">
+              <span class="prevText">Previous</span>
+              - 11hrs
               <!-- monthly -->
-            </p>
+            </span>
           </div>
         </div>
       </div>
