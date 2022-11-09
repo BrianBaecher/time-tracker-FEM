@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
-    background-color: hsl(226, 43%, 10%);
+  background-color: hsl(226, 43%, 10%);
 }
 
 h1,
@@ -15,107 +14,156 @@ h2,
 h3,
 h4,
 p {
-    margin: 0;
+  margin: 0;
+  color: whitesmoke;
 }
 
 h2 {
-    font-size: 3em;
-    font-weight: 300;
-    margin: 19px 0;
+  font-size: 3em;
+  font-weight: 300;
+  margin: 19px 0;
 }
 
 p {
-    font-size: .75em;
-    letter-spacing: .1em;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
 }
 
-img {
-    width: 40px;
+span {
+  display: inline-block;
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  color: whitesmoke;
 }
 
 .none {
-    display: none;
+  display: none;
 }
 
 .border {
-    border: 2px solid black;
-    border-radius: 10px;
-    overflow: hidden;
+  /* border: 2px solid black; */
+  /* issue with panels at lower edges bleeding colors */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* ----------PANEL---------- */
-.panels{
-    display: grid;
-    grid-template-rows: 200px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
+/* for some reason the grid-template-rows only affects
+the first row? */
+.panels {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-row: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+/* profile panel */
+.personCard {
+  grid-row-start: span 2;
+  /* border: 2px solid pink; */
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  /* display: flex;
+    flex-direction: column; */
 }
 
-.panelHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em 0;
+.report {
+  padding: 1em 2em;
+  background-color: hsl(235, 45%, 61%);
+  border-radius: 10px;
+}
+
+.report > img {
+  width: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 2em;
+}
+
+.report > h2 {
+  color: pink;
+  margin: 0 0;
+}
+
+.timeframes {
+  /* background-color: rgba(242, 255, 0, 0.435); */
+  margin: 1.5em 2em 0 2em;
+}
+
+.timeframes > p {
+  font-size: 0.8em;
+  margin-bottom: 1.75em;
+}
+
+.timeframes > p:nth-child(3) {
+  margin-bottom: 0;
+}
+
+/* end profile panel */
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
 }
 
 .panelContent {
-    /* border-radius: 10px; */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0px;
-    background-color: hsl(235, 46%, 20%);
-    height: 100%;
-    color: white;
-    padding: 0 2em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: hsl(235, 46%, 20%);
+  height: 100%;
+  padding: 0 2em;
 }
 
 .panel {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    /* background-color: hsl(15, 100%, 70%); */
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  /* background-color: hsl(15, 100%, 70%); */
+  height: 100%;
 }
 
 .panelImageWrapper {
-    z-index: 0;
-    height: 2.5em;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+  z-index: 0;
+  height: 2.5em;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .panelImage {
-    margin-right: 2em;
-    height: 60px;
-    width: 60px;
-    position: relative;
-    top: -10px;
+  margin-right: 2em;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  top: -10px;
 }
 
 /* added specificity for panel color changes above header */
-.work{
-    background-color: hsl(15, 100%, 70%);
+.work {
+  background-color: hsl(15, 100%, 70%);
 }
 
 .play {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 .study {
-    background-color: hsl(348, 100%, 68%);
+  background-color: hsl(348, 100%, 68%);
 }
 
 .exercise {
-    background-color: hsl(145, 58%, 55%);
+  background-color: hsl(145, 58%, 55%);
 }
 
 .social {
-    background-color: hsl(264, 64%, 52%);
+  background-color: hsl(264, 64%, 52%);
 }
 
 .selfCare {
-    background-color: hsl(43, 84%, 65%);
+  background-color: hsl(43, 84%, 65%);
 }
 /* ----------END PANEL---------- */
