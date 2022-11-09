@@ -28,79 +28,90 @@
     <script defer src="app.js"></script>
   </head>
   <body>
-    <img src="./images/image-jeremy.png" alt="" />
-    <p>Report for</p>
+    <div class="personCard">
+      <img src="./images/image-jeremy.png" alt="" />
+      <p>Report for</p>
 
-    <h2>Jeremy Robson</h2>
+      <h2>Jeremy Robson</h2>
 
-    <p>Daily</p>
-    <p>Weekly</p>
-    <p>Monthly</p>
+      <p>Daily</p>
+      <p>Weekly</p>
+      <p>Monthly</p>
+    </div>
     <div class="panels">
-      <div class="work border">
-        <div class="workImageWrapper">
-          <img class="workImage" src="./images/icon-work.svg" alt="">
+      <!-- -------WORK PANEL ------- -->
+      <div class="work panel border">
+        <div class="panelImageWrapper">
+          <img class="panelImage" src="./images/icon-work.svg" alt="" />
         </div>
         <div class="panelContent">
-        <div class="panelHeader">
-          <h4>Work</h4>
-          <img src="./images/icon-ellipsis.svg" alt="" />
-        </div>
-        <div class="workDaily none">
-          <h2>
-            5hrs
-            <!-- daily -->
-          </h2>
-          <p>
-            Previous - 7hrs
-            <!-- daily -->
-          </p>
-        </div>
-        <div class="workWeekly">
-          <h2>
-            32hrs
-            <!-- weekly -->
-          </h2>
-          <p>
-            Previous - 36hrs
-            <!-- weekly -->
-          </p>
-        </div>
-        <div class="workMonthly none">
-          <h3>
-            103hrs
-            <!-- monthly -->
-          </h3>
-          <p>
-            Previous - 128hrs
-            <!-- monthly -->
-          </p>
+          <div class="panelHeader">
+            <h4>Work</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="workDaily none">
+            <h2>
+              5hrs
+              <!-- daily -->
+            </h2>
+            <p>
+              Previous - 7hrs
+              <!-- daily -->
+            </p>
+          </div>
+          <div class="workWeekly">
+            <h2>
+              32hrs
+              <!-- weekly -->
+            </h2>
+            <p>
+              Previous - 36hrs
+              <!-- weekly -->
+            </p>
+          </div>
+          <div class="workMonthly none">
+            <h3>
+              103hrs
+              <!-- monthly -->
+            </h3>
+            <p>
+              Previous - 128hrs
+              <!-- monthly -->
+            </p>
+          </div>
         </div>
       </div>
-      </div>
-
-      <div class="play border">
-        <h4>Play</h4>
-        <div class="playDaily none">
-          <h2>
-            1hr
-            <!-- daily -->
-          </h2>
-
-          <p>
-            Previous - 2hrs
-            <!-- daily -->
-          </p>
+      <!-- -------PLAY PANEL------- -->
+      <div class="play panel border">
+        <div class="panelImageWrapper">
+          <img class="panelImage" src="./images/icon-play.svg" alt="" />
         </div>
-        <div class="playWeekly">
-          <h2>
-            10hrs
-            <!-- weekly -->
-          </h2>
-          <p>
-            Previous - 8hrs
-            <!-- weekly -->
-          </p>
+        <div class="panelContent">
+          <div class="panelHeader">
+            <h4>Play</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="playDaily none">
+            <h2>
+              1hr
+              <!-- daily -->
+            </h2>
+
+            <p>
+              Previous - 2hrs
+              <!-- daily -->
+            </p>
+          </div>
+          <div class="playWeekly">
+            <h2>
+              10hrs
+              <!-- weekly -->
+            </h2>
+            <p>
+              Previous - 8hrs
+              <!-- weekly -->
+            </p>
+          </div>
         </div>
         <div class="playMonthly none">
           <h2>
@@ -113,140 +124,176 @@
           </p>
         </div>
       </div>
-      <div class="study border">
-        <h4>Study</h4>
-        <div class="studyDaily none">
-          <h2>
-            0hrs
-            <!-- daily -->
-          </h2>
+      <!-- ------- STUDY PANEL------- -->
+      <div class="study panel border">
+        <div class="panelImageWrapper">
+          <img class="panelImage" src="./images/icon-study.svg" alt="" />
+        </div>
+        <div class="panelContent">
+          <div class="panelHeader">
+            <h4>Study</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="studyDaily none">
+            <h2>
+              0hrs
+              <!-- daily -->
+            </h2>
 
-          <p>
-            Previous - 1hr
-            <!-- daily -->
-          </p>
-        </div>
-        <div class="studyWeekly">
-          <h2>
-            4hrs
-            <!-- weekly -->
-          </h2>
-          <p>
-            Previous - 7hrs
-            <!-- weekly -->
-          </p>
-        </div>
-        <div class="studyMonthly none">
-          <h2>
-            13hrs
-            <!-- monthly -->
-          </h2>
-          <p>
-            Previous - 19hrs
-            <!-- monthly -->
-          </p>
+            <p>
+              Previous - 1hr
+              <!-- daily -->
+            </p>
+          </div>
+          <div class="studyWeekly">
+            <h2>
+              4hrs
+              <!-- weekly -->
+            </h2>
+            <p>
+              Previous - 7hrs
+              <!-- weekly -->
+            </p>
+          </div>
+          <div class="studyMonthly none">
+            <h2>
+              13hrs
+              <!-- monthly -->
+            </h2>
+            <p>
+              Previous - 19hrs
+              <!-- monthly -->
+            </p>
+          </div>
         </div>
       </div>
-      <div class="exercise border">
-        <h4>Exercise</h4>
-        <div class="exerciseDaily none">
-          <h2>
-            1hr
-            <!-- daily -->
-          </h2>
+      <!-- -------EXERCISE PANEL------- -->
+      <div class="exercise panel border">
+        <div class="panelImageWrapper">
+          <img class="panelImage" src="./images/icon-exercise.svg" alt="" />
+        </div>
+        <div class="panelContent">
+          <div class="panelHeader">
+            <h4>Exercise</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="exerciseDaily none">
+            <h2>
+              1hr
+              <!-- daily -->
+            </h2>
 
-          <p>
-            Previous - 1hr
-            <!-- daily -->
-          </p>
-        </div>
-        <div class="exerciseWeekly">
-          <h2>
-            4hrs
-            <!-- weekly -->
-          </h2>
-          <p>
-            Previous - 5hrs
-            <!-- weekly -->
-          </p>
-        </div>
-        <div class="exerciseMonthly none">
-          <h2>
-            11hrs
-            <!-- monthly -->
-          </h2>
-          <p>
-            Previous - 18hrs
-            <!-- monthly -->
-          </p>
+            <p>
+              Previous - 1hr
+              <!-- daily -->
+            </p>
+          </div>
+          <div class="exerciseWeekly">
+            <h2>
+              4hrs
+              <!-- weekly -->
+            </h2>
+            <p>
+              Previous - 5hrs
+              <!-- weekly -->
+            </p>
+          </div>
+          <div class="exerciseMonthly none">
+            <h2>
+              11hrs
+              <!-- monthly -->
+            </h2>
+            <p>
+              Previous - 18hrs
+              <!-- monthly -->
+            </p>
+          </div>
         </div>
       </div>
-      <div class="social border">
-        <h4>Social</h4>
-        <div class="socialDaily none">
-          <h2>
-            Social 1hr
-            <!-- daily -->
-          </h2>
+      <!-- -------SOCIAL PANEL------- -->
+      <div class="social panel border">
+        <div class="panelImageWrapper">
+          <img class="panelImage" src="./images/icon-social.svg" alt="" />
+        </div>
+        <div class="panelContent">
+          <div class="panelHeader">
+            <h4>Social</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="socialDaily none">
+            <h2>
+              Social 1hr
+              <!-- daily -->
+            </h2>
 
-          <p>
-            Previous - 3hrs
-            <!-- daily -->
-          </p>
-        </div>
-        <div class="socialWeekly">
-          <h2>
-            5hrs
-            <!-- weekly -->
-          </h2>
-          <p>
-            Previous - 10hrs
-            <!-- weekly -->
-          </p>
-        </div>
-        <div class="socialMonthly none">
-          <h2>
-            21hrs
-            <!-- monthly -->
-          </h2>
-          <p>
-            Previous - 23hrs
-            <!-- monthly -->
-          </p>
+            <p>
+              Previous - 3hrs
+              <!-- daily -->
+            </p>
+          </div>
+          <div class="socialWeekly">
+            <h2>
+              5hrs
+              <!-- weekly -->
+            </h2>
+            <p>
+              Previous - 10hrs
+              <!-- weekly -->
+            </p>
+          </div>
+          <div class="socialMonthly none">
+            <h2>
+              21hrs
+              <!-- monthly -->
+            </h2>
+            <p>
+              Previous - 23hrs
+              <!-- monthly -->
+            </p>
+          </div>
         </div>
       </div>
-      <div class="selfCare border">
-        <h4>Self Care</h4>
-        <div class="selfCareDaily none">
-          <h2>
-            Self Care 0hrs
-            <!-- daily -->
-          </h2>
+      <!-- -------SELFCARE PANEL------- -->
+      <div class="selfCare panel border">
+        <div class="panelImageWrapper">
+          <img class="panelImage" src="./images/icon-self-care.svg" alt="" />
+        </div>
+        <div class="panelContent">
+          <div class="panelHeader">
+            <h4>Self Care</h4>
+            <img src="./images/icon-ellipsis.svg" alt="" />
+          </div>
+          <div class="selfCareDaily none">
+            <h2>
+              Self Care 0hrs
+              <!-- daily -->
+            </h2>
 
-          <p>
-            Previous - 1hr
-            <!-- daily -->
-          </p>
-        </div>
-        <div class="selfCareWeekly">
-          <h2>
-            2hrs
-            <!-- weekly -->
-          </h2>
-          <p>
-            Previous - 2hrs
-            <!-- weekly -->
-          </p>
-        </div>
-        <div class="selfCareMonthly none">
-          <h2>
-            7hrs
-            <!-- monthly -->
-          </h2>
-          <p>
-            Previous - 11hrs
-            <!-- monthly -->
-          </p>
+            <p>
+              Previous - 1hr
+              <!-- daily -->
+            </p>
+          </div>
+          <div class="selfCareWeekly">
+            <h2>
+              2hrs
+              <!-- weekly -->
+            </h2>
+            <p>
+              Previous - 2hrs
+              <!-- weekly -->
+            </p>
+          </div>
+          <div class="selfCareMonthly none">
+            <h2>
+              7hrs
+              <!-- monthly -->
+            </h2>
+            <p>
+              Previous - 11hrs
+              <!-- monthly -->
+            </p>
+          </div>
         </div>
       </div>
     </div>

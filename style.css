@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: hsl(226, 43%, 10%);
 }
 
 h1,
@@ -35,7 +35,6 @@ img {
 
 .none {
     display: none;
-    color: pink;
 }
 
 .border {
@@ -44,6 +43,7 @@ img {
     overflow: hidden;
 }
 
+/* ----------PANEL---------- */
 .panels{
     display: grid;
     grid-template-rows: 200px;
@@ -51,7 +51,6 @@ img {
     gap: 1em;
 }
 
- /* test */
 .panelHeader{
     display: flex;
     justify-content: space-between;
@@ -59,32 +58,26 @@ img {
     margin: 1em 0;
 }
 
-.panelHeader > img{
-    width: 20px;
-}
-
 .panelContent {
     /* border-radius: 10px; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
     background-color: hsl(235, 46%, 20%);
     height: 100%;
     color: white;
     padding: 0 2em;
 }
 
-/* work test
-trying to move content to bottom, to overlay image at top */
-
-.work {
+.panel {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    background-color: hsl(15, 100%, 70%);
+    /* background-color: hsl(15, 100%, 70%); */
     height: 100%;
 }
 
-.workImageWrapper {
+.panelImageWrapper {
     z-index: 0;
     height: 2.5em;
     overflow: hidden;
@@ -93,22 +86,36 @@ trying to move content to bottom, to overlay image at top */
     width: 100%;
 }
 
-.workImage {
-    margin-right: 4em;
+.panelImage {
+    margin-right: 2em;
     height: 60px;
     width: 60px;
     position: relative;
     top: -10px;
 }
 
-
-
-.flexcol {
-    display: flex;
-    flex-direction: column;
-    height: 7em;
-    justify-content: space-between;
-    margin-top: 2em;
+/* added specificity for panel color changes above header */
+.work{
+    background-color: hsl(15, 100%, 70%);
 }
 
-/* idk what is happening */
+.play {
+    background-color: aqua;
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.selfCare {
+    background-color: hsl(43, 84%, 65%);
+}
+/* ----------END PANEL---------- */
