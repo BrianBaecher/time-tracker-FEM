@@ -142,6 +142,20 @@ the first row? */
   top: -10px;
 }
 
+.panelContent:hover {
+  background-color: hsl(235, 45%, 61%);
+}
+
+.navDots {
+  padding: 0.5em 0;
+  opacity: 100%;
+}
+
+.navDots:hover {
+  opacity: 33%;
+  cursor: pointer;
+}
+
 /* added specificity for panel color changes above header */
 .work {
   /* background-color: hsl(15, 100%, 70%); */
@@ -158,16 +172,13 @@ the first row? */
 
 .exercise {
   background: linear-gradient(hsl(145, 47%, 45%), hsl(235, 46%, 20%));
-
 }
 
 .social {
   background: linear-gradient(hsl(264, 64%, 52%), hsl(235, 46%, 20%));
-
 }
 
 .selfCare {
   background: linear-gradient(hsl(43, 55%, 53%), hsl(235, 46%, 20%));
-
 }
 /* ----------END PANEL---------- */
