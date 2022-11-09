@@ -144,26 +144,30 @@ the first row? */
 
 /* added specificity for panel color changes above header */
 .work {
-  background-color: hsl(15, 100%, 70%);
+  /* background-color: hsl(15, 100%, 70%); */
+  background: linear-gradient(hsl(15, 59%, 56%), hsl(235, 46%, 20%));
 }
 
 .play {
-  background-color: aqua;
+  background: linear-gradient(hsl(195, 74%, 62%), hsl(235, 46%, 20%));
 }
 
 .study {
-  background-color: hsl(348, 100%, 68%);
+  background: linear-gradient(hsl(348, 47%, 51%), hsl(235, 46%, 20%));
 }
 
 .exercise {
-  background-color: hsl(145, 58%, 55%);
+  background: linear-gradient(hsl(145, 47%, 45%), hsl(235, 46%, 20%));
+
 }
 
 .social {
-  background-color: hsl(264, 64%, 52%);
+  background: linear-gradient(hsl(264, 64%, 52%), hsl(235, 46%, 20%));
+
 }
 
 .selfCare {
-  background-color: hsl(43, 84%, 65%);
+  background: linear-gradient(hsl(43, 55%, 53%), hsl(235, 46%, 20%));
+
 }
 /* ----------END PANEL---------- */
